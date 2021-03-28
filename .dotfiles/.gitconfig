@@ -1,0 +1,33 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Darren Johnston
+
+[push]
+	default = current
+
+[alias]
+	#mig = "!git checkout -b migrate_${1} master; #"
+	#fet = "!git checkout -b feature_${1} master; #"
+	#hot = "!git checkout -b hotfix_${1} master; #"
+	mas = "!git checkout master; "
+	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
+	unstage = reset HEAD --
+	changes = "!git diff --name-only  master $(git rev-parse --abbrev-ref HEAD | tail -n 1)"
+[core]
+	editor = vim
+	pager = $HOME/gits/tools/diff-so-fancy/diff-so-fancy | less --tabs=4 -RFX
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = 11
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
