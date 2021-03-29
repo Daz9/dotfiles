@@ -7,6 +7,7 @@ dotfiles() {
 	ln -sv "$PWD/.dotfiles/.aliases" ~
 	ln -sv "$PWD/.dotfiles/.evnvars" ~
 	ln -sv "$PWD/.dotfiles/.vimrc" ~
+	ln -sv "$PWD/.dotfiles/.gitconfig" ~
 }
 
 downloadtools() {
