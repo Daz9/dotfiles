@@ -1,7 +1,4 @@
 # .bashrc
-
-
-
 cd;
 
 # Source global definitions

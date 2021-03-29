@@ -2,7 +2,7 @@ export SVN_EDITOR=vim
 export PATH="$PATH:$HOME/gits/tools/diff-so-fancy/diff-so-fancy"
 
 # May need changed depending on pc
-export wr=~/../../mnt/c/Users/DJOHNS206/
+#export wr=~/../../mnt/c/Users/DJOHNS206/
 
-export GREP_OPTIONS='—color=auto'
+#export GREP_OPTIONS='—color=auto'
 
