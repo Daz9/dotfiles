@@ -1,5 +1,16 @@
 # .bashrc
-cd;
+
+
+#Source env setup 
+if [ -f ~/.evnvars ]; then
+    . ~/.evnvars
+fi
+
+# In WSL I like to go to ~ when the rc is sourced.
+# But ona remote machine it's best to leave default behaviour 
+if [[ -z "${REMOTE_ENV}" ]]; then 
+	cd;
+fi
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
@@ -96,9 +107,10 @@ if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
 
-#Source env setup 
-if [ -f ~/.evnvars ]; then
-    . ~/.evnvars
+
+#Source work specific aliases
+if [ -f ~/work_aliases ]; then
+    . ~/work_aliases
 fi
 
 # enable programmable completion features (you don't need to enable

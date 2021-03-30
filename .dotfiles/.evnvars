@@ -1,5 +1,6 @@
 export SVN_EDITOR=vim
 export PATH="$PATH:$HOME/gits/tools/diff-so-fancy/diff-so-fancy"
+export REMOTE_ENV="YES"
 
 # May need changed depending on pc
 #export wr=~/../../mnt/c/Users/DJOHNS206/
