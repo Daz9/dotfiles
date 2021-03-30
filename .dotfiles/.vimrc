@@ -181,10 +181,12 @@ colorscheme gruvbox
 set background=dark
 
 
-" Git commit message settings
-au FileType gitcommit setlocal tw=72
-au FileType gitcommit setlocal cc=+1
+" Git/svn commit message settings
+au FileType gitcommit,svn setlocal tw=72
+au FileType gitcommit,svn setlocal cc=+1
 hi SpellBad ctermbg=red ctermbg=white guibg=red guifg=white
+
+
 
 " Ctrl p optimizations
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
