@@ -3,11 +3,12 @@
 usage() { echo "Usage: $0 [-a Will install dotfiles, mkdirs & download tools] [-r rill setup dotfiles only]" 1>&2; exit 1; }
 
 dotfiles() {
-	ln -sv "$PWD/.dotfiles/.bashrc" ~
-	ln -sv "$PWD/.dotfiles/.aliases" ~
-	ln -sv "$PWD/.dotfiles/.evnvars" ~
-	ln -sv "$PWD/.dotfiles/.vimrc" ~
-	ln -sv "$PWD/.dotfiles/.gitconfig" ~
+	ln -sv "$HOME/dotfiles/.dotfiles/.bashrc" ~
+	ln -sv "$HOME/dotfiles/.dotfiles/.aliases" ~
+	ln -sv "$HOME/dotfiles/.dotfiles/.evnvars" ~
+	ln -sv "$HOME/dotfiles/.dotfiles/.vimrc" ~
+	ln -sv "$HOME/dotfiles/.dotfiles/.gitconfig" ~
+	ln -sv "$HOME/dotfiles/.dotfiles/.prompt.sh" ~
 }
 
 downloadtools() {
