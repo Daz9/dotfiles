@@ -107,10 +107,9 @@ if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
 
-
 #Source work specific aliases
-if [ -f ~/work_aliases ]; then
-    . ~/work_aliases
+if [ -f ~/.work_aliases ]; then
+    . ~/.work_aliases
 fi
 
 # enable programmable completion features (you don't need to enable
