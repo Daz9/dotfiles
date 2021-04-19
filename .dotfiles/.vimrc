@@ -128,7 +128,7 @@ nmap <leader>fu zR
 " general
 
 " semicolon to colon
-nmap ; :
+"nmap ; :
 
 " navigate between buffers
 " using Ctrl+Arrow
@@ -164,6 +164,9 @@ nnoremap <leader>M :set mouse=a<CR>
 " paste mode
 nnoremap <leader>s :set paste<CR>
 
+" buffer list
+nnoremap <leader>b :buffers<CR>
+
 " Set colurs
 let g:gruvbox_contrast_dark = 'hard'
 if exists('+termguicolors')
@@ -174,8 +177,6 @@ let g:gruvbox_invert_selection='0'
 
 let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
 
-let g:ctrlp_max_files=0
-let g:ctrlp_max_depth=40
 
 colorscheme gruvbox
 set background=dark
@@ -189,8 +190,13 @@ hi SpellBad ctermbg=red ctermbg=white guibg=red guifg=white
 
 
 " Ctrl p optimizations
+let g:ctrlp_max_files=0
+let g:ctrlp_max_depth=40
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 if executable('ag')
 	  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
   endif
 let g:ctrlp_open_multiple_files = 't'
+"let g:ctrlp_working_path_mode = 'ca'
+nnoremap <C-a> :CtrlP :pwd<CR>
+nnoremap <C-h> :CtrlP ~<CR>
