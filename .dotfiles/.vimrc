@@ -200,3 +200,4 @@ let g:ctrlp_open_multiple_files = 't'
 "let g:ctrlp_working_path_mode = 'ca'
 nnoremap <C-a> :CtrlP :pwd<CR>
 nnoremap <C-h> :CtrlP ~<CR>
+let g:ctrlp_show_hidden = 1
