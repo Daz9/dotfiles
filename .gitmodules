@@ -1,0 +1,42 @@
+[submodule ".vim/autoload/vim-airline"]
+	path = .vim/autoload/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule ".vim/autoload/gruvbox"]
+	path = .vim/autoload/gruvbox
+	url = https://github.com/gruvbox-community/gruvbox.git
+[submodule ".vim/autoload/vim-indexed-search"]
+	path = .vim/autoload/vim-indexed-search
+	url = https://github.com/henrik/vim-indexed-search.git
+[submodule ".vim/autoload/vim-monokai-pro"]
+	path = .vim/autoload/vim-monokai-pro
+	url = https://github.com/phanviet/vim-monokai-pro.git
+[submodule ".vim/autoload/undotree"]
+	path = .vim/autoload/undotree
+	url = https://github.com/mbbill/undotree.git
+[submodule ".vim/autoload/ctrlp.vim"]
+	path = .vim/autoload/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
+[submodule ".vim/autoload/fastfold"]
+	path = .vim/autoload/fastfold
+	url = https://github.com/konfekt/fastfold.git
+[submodule ".vim/autoload/delimitMate.vim"]
+	path = .vim/autoload/delimitMate.vim
+	url = https://github.com/vim-scripts/delimitMate.vim.git
+[submodule ".vim/autoload/vim-airline-themes"]
+	path = .vim/autoload/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule ".vim/autoload/vim-colorschemes"]
+	path = .vim/autoload/vim-colorschemes
+	url = https://github.com/flazz/vim-colorschemes.git
+[submodule ".vim/autoload/rainbow"]
+	path = .vim/autoload/rainbow
+	url = https://github.com/luochen1990/rainbow.git
+[submodule ".vim/autoload/vim-man"]
+	path = .vim/autoload/vim-man
+	url = https://github.com/vim-utils/vim-man.git
+[submodule ".vim/autoload/gruvbox-material"]
+	path = .vim/autoload/gruvbox-material
+	url = https://github.com/sainnhe/gruvbox-material.git
+[submodule ".vim/autoload/vim-mucomplete"]
+	path = .vim/autoload/vim-mucomplete
+	url = https://github.com/lifepillar/vim-mucomplete.git
