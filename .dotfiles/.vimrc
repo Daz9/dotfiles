@@ -84,7 +84,10 @@ set lazyredraw
 set splitbelow
 set splitright
 set scrolloff=10
+set tabstop=8
+set noexpandtab
 
+		
 
 if &term =~ '256color'
 	set t_ut=

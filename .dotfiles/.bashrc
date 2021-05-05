@@ -1,5 +1,6 @@
 # .bashrc
 
+stty -ixon
 
 #Source env setup 
 if [ -f ~/.evnvars ]; then
