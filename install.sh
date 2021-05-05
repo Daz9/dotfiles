@@ -19,6 +19,15 @@ downloadtools() {
 	git clone https://github.com/so-fancy/diff-so-fancy.git $HOME/gits/tools/diff-so-fancy/ 
 	wget -O $HOME/perl-support.zip https://www.vim.org/scripts/download_script.php?src_id=24473
 	unzip $HOME/perl-support.zip -d $HOME/.vim
+	mv $HOME/.vim/perl-support/codesnippets $HOME/.vim/perl-support/codesnippets_backup 
+	mv $HOME/.vim/perl-support/templates $HOME/.vim/perl-support/templates_backup 
+	ln -sf "$HOME/dotfiles/codesnippets" "$HOME/.vim/perl-support/"
+	ln -sf "$HOME/dotfiles/templates" "$HOME/.vim/perl-support/"
+}
+
+clean() {
+	# DESTRUCTIVE: DO NOT USE UNLESS NEEDED
+	rm -rf $HOME/.vimrc $HOME/.vim $HOME/.prompt.sh $HOME/.gitconfig $HOME/.evnvars $HOME/.bashrc $HOME/.aliases $HOME/gits/
 }
 
 all() {
@@ -32,13 +41,16 @@ pluginstallmsg() {
 	echo "If you want perlbrew run: curl -L https://install.perlbrew.pl | bash " 1>&2; 
 }
 
-while getopts "ar" o; do
+while getopts "arc" o; do
     case "${o}" in
         a)
 			all
             ;;
         r)
 			dotfiles	
+            ;;
+        c)
+			clean	
             ;;
         *)
             usage
