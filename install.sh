@@ -19,7 +19,6 @@ downloadtools() {
 	git clone https://github.com/so-fancy/diff-so-fancy.git $HOME/gits/tools/diff-so-fancy/ 
 	wget -O $HOME/perl-support.zip https://www.vim.org/scripts/download_script.php?src_id=24473
 	unzip $HOME/perl-support.zip -d $HOME/.vim
-	cp -r $HOME/dotfiles/.vim/* ~/.vim
 }
 
 all() {
