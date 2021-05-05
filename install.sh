@@ -19,7 +19,6 @@ downloadtools() {
 	git clone https://github.com/so-fancy/diff-so-fancy.git $HOME/gits/tools/diff-so-fancy/ 
 	#wget -O $HOME/perl-support.zip https://www.vim.org/scripts/download_script.php?src_id=24473
 	#unzip $HOME/perl-support.zip -d $HOME/.vim
-	curl -L https://install.perlbrew.pl | bash
 }
 
 all() {
@@ -30,7 +29,7 @@ all() {
 
 pluginstallmsg() {
 	echo "You will need to enter vim and run :PlugInstall to finish setting up" 1>&2; 
-	echo "You will need to append this to bottom of .bashrc: source ~/perl5/perlbrew/etc/bashrc" 1>&2; 
+	echo "If you want perlbrew run: curl -L https://install.perlbrew.pl | bash " 1>&2; 
 }
 
 while getopts "ar" o; do

@@ -4,6 +4,14 @@
 " mv wrongname to perl-support.zip 
 " cd .vim; unzip ~/perl-support.zip ./
 "
+"
+"
+"Due to the submodule way of handling plugins i think my plugin manager wont
+"update anymore.  This command is needed to udpate the repos:
+"git submodule foreach git checkout master && git submodule foreach git pull
+"
+"
+"
 "perl 
 filetype plugin on
 helptags ~/.vim/doc
