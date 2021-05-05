@@ -17,8 +17,8 @@ downloadtools() {
 	mkdir -p $HOME/.vim
 	curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 	git clone https://github.com/so-fancy/diff-so-fancy.git $HOME/gits/tools/diff-so-fancy/ 
-	wget -O $HOME/perl-support.zip https://www.vim.org/scripts/download_script.php?src_id=24473
-	unzip $HOME/perl-support.zip -d $HOME/.vim
+	#wget -O $HOME/perl-support.zip https://www.vim.org/scripts/download_script.php?src_id=24473
+	#unzip $HOME/perl-support.zip -d $HOME/.vim
 	curl -L https://install.perlbrew.pl | bash
 }
 
