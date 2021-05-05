@@ -9,16 +9,17 @@ dotfiles() {
 	ln -sv "$HOME/dotfiles/.dotfiles/.vimrc" ~
 	ln -sv "$HOME/dotfiles/.dotfiles/.gitconfig" ~
 	ln -sv "$HOME/dotfiles/.dotfiles/.prompt.sh" ~
-	ln -sv "$HOME/dotfiles/.vim" ~
+	#ln -sv "$HOME/dotfiles/.vim" ~
 }
 
 downloadtools() {
 	mkdir -p $HOME/gits/tools/diff-so-fancy
-	mkdir -p $HOME/.vim
-	curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	mkdir -p $HOME/.vim/
+	#curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 	git clone https://github.com/so-fancy/diff-so-fancy.git $HOME/gits/tools/diff-so-fancy/ 
-	#wget -O $HOME/perl-support.zip https://www.vim.org/scripts/download_script.php?src_id=24473
-	#unzip $HOME/perl-support.zip -d $HOME/.vim
+	wget -O $HOME/perl-support.zip https://www.vim.org/scripts/download_script.php?src_id=24473
+	unzip $HOME/perl-support.zip -d $HOME/.vim
+	cp -r $HOME/dotfiles/.vim/* ~/.vim
 }
 
 all() {
