@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#TESTING SSH KEY
-
 usage() { echo "Usage: $0 [-a Will install dotfiles, mkdirs & download tools] [-r rill setup dotfiles only]" 1>&2; exit 1; }
 
 dotfiles() {
