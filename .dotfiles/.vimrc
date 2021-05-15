@@ -62,6 +62,7 @@ Plug 'luochen1990/rainbow'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'lifepillar/vim-mucomplete'
+Plug 'mattn/emmet-vim'
 call plug#end()
 
 "====================
