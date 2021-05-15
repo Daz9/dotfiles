@@ -12,9 +12,9 @@ InterfaceVersion ( '1.0' )
 
 SetMacro( 'AUTHOR',       'Darren Johnston' )
 SetMacro( 'AUTHORREF',    '' )
-SetMacro( 'EMAIL',        'darren.johnston@cdsl.co.uk' )
-SetMacro( 'ORGANIZATION', 'CDSL' )
-SetMacro( 'COMPANY',      'CDSL' )
+SetMacro( 'EMAIL',        '' )
+SetMacro( 'ORGANIZATION', '' )
+SetMacro( 'COMPANY',      '' )
 SetMacro( 'COPYRIGHT',    '' )
 SetMacro( 'LICENSE',      '' )
 
