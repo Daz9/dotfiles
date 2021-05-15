@@ -10,6 +10,8 @@ dotfiles() {
 	ln -sv "$HOME/dotfiles/.dotfiles/.gitconfig" ~
 	ln -sv "$HOME/dotfiles/.dotfiles/.prompt.sh" ~
 	ln -sv "$HOME/dotfiles/.dotfiles/.sqliterc" ~
+	touch ~/.localgitconfig
+	touch ~/.work_aliases
 	#ln -sv "$HOME/dotfiles/.vim" ~
 }
 
