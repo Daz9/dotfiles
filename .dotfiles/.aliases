@@ -16,6 +16,7 @@ alias sd='svn diff | dsf'
 alias st='svn st'
 alias sdl='svn diff | dsf | less --tabs=4 -RFX'
 alias cdwr='cd "$wr"'
+alias modified="svn st | grep M | awk '{print \$2}' | xargs echo"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert

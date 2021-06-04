@@ -62,7 +62,7 @@ Plug 'luochen1990/rainbow'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'lifepillar/vim-mucomplete'
-Plug 'Thyrum/vim-stabs'
+"Plug 'Thyrum/vim-stabs'
 call plug#end()
 
 "====================
